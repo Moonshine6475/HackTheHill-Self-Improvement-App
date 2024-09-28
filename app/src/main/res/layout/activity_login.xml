@@ -42,10 +42,11 @@
             android:layout_height="70dp"
             android:layout_marginHorizontal="32dp"
             android:fontFamily="sans-serif-light"
+            android:onClick="loginPressed"
             android:text="Login"
             android:textAlignment="textEnd"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-            app:cornerRadius="10dp"
+            app:cornerRadius="15dp"
             app:icon="@android:drawable/ic_partial_secure" />
 
         <Button
@@ -55,12 +56,13 @@
             android:layout_marginHorizontal="32dp"
             android:layout_marginTop="10dp"
             android:backgroundTint="#E91E63"
-            android:fontFamily="sans-serif-medium"
+            android:fontFamily="sans-serif-light"
+            android:onClick="noAccSignUp"
             android:text="no account?"
             android:textAlignment="textEnd"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textSize="20dp"
-            app:cornerRadius="10dp"
+            app:cornerRadius="15dp"
             app:icon="@android:drawable/stat_sys_warning" />
 
     </LinearLayout>

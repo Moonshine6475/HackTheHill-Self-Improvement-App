@@ -1,6 +1,9 @@
 package com.example.thehealthapp;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,4 +24,18 @@ public class Login extends AppCompatActivity {
             return insets;
         });
     }
+
+    final EditText emailEntry = (EditText) findViewById(R.id.editTextTextEmailAddress);
+    final EditText passEntry = (EditText) findViewById(R.id.editTextTextPassword);
+
+    public void loginPressed() {
+        emailEntry.getText();
+        passEntry.getText();
+        //idk do something with these
+    }
+
+    public void noAccSignUp() {
+        //should send you to the register page.
+    }
+
 }
