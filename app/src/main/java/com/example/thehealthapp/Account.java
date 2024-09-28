@@ -3,15 +3,18 @@ package com.example.thehealthapp;
 import java.util.ArrayList;
 import java.util.Date;
 
-import kotlinx.coroutines.scheduling.Task;
 
 public class Account {
-    String fristName;
+    String firstName;
     String lastName;
     String email;
     String password;
 
     String focusedImprovemnet;
+
+    Date wakeUp;
+    Date sleep;
+
 
     double wakeUp;
     double sleep;
