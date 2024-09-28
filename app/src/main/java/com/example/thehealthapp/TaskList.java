@@ -1,3 +1,5 @@
+package com.example.thehealthapp;
+
 import java.util.ArrayList;
 import com.example.thehealthapp.tasks.Task;
 
