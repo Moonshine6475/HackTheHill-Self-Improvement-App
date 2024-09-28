@@ -3,12 +3,12 @@ package com.example.thehealthapp;
 import java.util.Date;
 
 public class Account {
-    String fristName;
+    String firstName;
     String lastName;
     String email;
     String password;
 
-    Sting focusedImprovemnet;
+    String focusedImprovemnet;
 
     Date wakeUp;
     Date sleep;
