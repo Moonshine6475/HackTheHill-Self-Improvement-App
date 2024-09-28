@@ -30,9 +30,16 @@ public class Register extends AppCompatActivity {
     final EditText passConfirm = (EditText) findViewById(R.id.editTextTextPasswordConf);
 
     public void registerPressed(View view) {
-        emailEntry.getText();
-        passEntry.getText();
-        passConfirm.getText();
+        String e = String.valueOf(emailEntry.getText());
+        String p = String.valueOf(passEntry.getText());
+        String c = String.valueOf(passConfirm.getText());
+        if(p.equals(c)) {
+            MainActivity.user = new Account(e,p);
+            Intent intent = new Intent(this, Login.class);
+            startActivity(intent);
+        }else{
+
+        }
         //idk do something with these
     }
 

@@ -18,8 +18,8 @@ import static com.example.thehealthapp.Constant.category.HEALTH;
 
 
 public class Account {
-    String firstName;
-    String lastName;
+//    String firstName;
+//    String lastName;
     String email;
     String password;
 
@@ -40,16 +40,12 @@ public class Account {
     Account(){
         //All ready a account
     }
-    Account(String e, String f, String l, String p){
-        firstName = f;
-        lastName = l;
+    Account(String e, String p){
         email = e;
         password = p;
         //New account
     }
-    Account(String e, String f, String l, String p, int[] stat){
-        firstName = f;
-        lastName = l;
+    Account(String e, String p, int[] stat){
         email = e;
         password = p;
         user.states = stat;
@@ -101,10 +97,10 @@ public class Account {
                 BufferedReader read = new BufferedReader(new FileReader(file));
                 String tmp = read.readLine();
 
-                firstName = tmp.substring(0,tmp.indexOf(":"));
-                tmp.substring(tmp.indexOf(":"));
-                lastName = tmp.substring(0,tmp.indexOf(":"));
-                tmp.substring(tmp.indexOf(":"));
+//                firstName = tmp.substring(0,tmp.indexOf(":"));
+//                tmp.substring(tmp.indexOf(":"));
+//                lastName = tmp.substring(0,tmp.indexOf(":"));
+//                tmp.substring(tmp.indexOf(":"));
                 email = tmp.substring(0,tmp.indexOf(":"));
                 tmp.substring(tmp.indexOf(":"));
                 password = tmp.substring(0,tmp.indexOf(":"));
@@ -118,7 +114,7 @@ public class Account {
     public void write() throws IOException {
         File file = new File("data");
         BufferedWriter write = new BufferedWriter(new FileWriter(file));
-        String tmp = firstName + ":" + lastName + ":" + email + ":" + password + ":" + user.writeString();
+        String tmp = email + ":" + password + ":" + user.writeString();
         write.write(tmp);
     }
 }
