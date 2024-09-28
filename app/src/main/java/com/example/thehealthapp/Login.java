@@ -1,5 +1,6 @@
 package com.example.thehealthapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -33,7 +34,12 @@ public class Login extends AppCompatActivity {
     }
 
     public void noAccSignUp(View view) {
-        //should send you to the register page.
+        //should send you to the register page???????
+        // also do not!! click too many times because what i think happens is you create a new instance each time
+        // and idk how to implement it properly (switch if already exist/create if not)
+        // unless im dumb and thats how its working rn
+        Intent intent = new Intent(this, Register.class);
+        startActivity(intent);
     }
 
 }

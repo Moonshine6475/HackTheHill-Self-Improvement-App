@@ -1,5 +1,6 @@
 package com.example.thehealthapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -36,7 +37,9 @@ public class Register extends AppCompatActivity {
     }
 
     public void accLogin(View view) {
-        //should send you to the register page.
+        //should send you to the login page?
+        Intent intent = new Intent(this, Login.class);
+        startActivity(intent);
     }
 
 
