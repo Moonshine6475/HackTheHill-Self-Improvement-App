@@ -35,7 +35,7 @@
         android:textAlignment="textEnd"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:cornerRadius="15dp"
-        app:icon="@android:drawable/ic_secure"
+        app:icon="@android:drawable/stat_sys_download_done"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -48,6 +48,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/main_page" />
+        app:srcCompat="@drawable/appname" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
