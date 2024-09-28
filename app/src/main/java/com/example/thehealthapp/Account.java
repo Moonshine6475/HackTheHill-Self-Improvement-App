@@ -1,5 +1,6 @@
 package com.example.thehealthapp;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Account {
@@ -8,24 +9,28 @@ public class Account {
     String email;
     String password;
 
-    Sting focusedImprovemnet;
+    String focusedImprovemnet;
 
-    Date wakeUp;
-    Date sleep;
+    double wakeUp;
+    double sleep;
 
-
-
+    ArrayList<Double> timeOfWork = new ArrayList<Double>();
 
     int point;
     int coins;
 
 
-    
-    
+    Account(String e, String f, String l, String p){
+        fristName = f;
+        lastName = l;
+        email = e;
+        password = p;
+    }
 }
 
 class Character{
-    int[] states = new int[5];
-    //todo png
+    short[] states = new short[5];//todo png
+
     String png;
 }
+
