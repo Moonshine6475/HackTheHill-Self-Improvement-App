@@ -3,8 +3,6 @@ package com.example.thehealthapp;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
-
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -28,13 +26,13 @@ public class Login extends AppCompatActivity {
     final EditText emailEntry = (EditText) findViewById(R.id.editTextTextEmailAddress);
     final EditText passEntry = (EditText) findViewById(R.id.editTextTextPassword);
 
-    public void loginPressed() {
+    public void loginPressed(View view) {
         emailEntry.getText();
         passEntry.getText();
         //idk do something with these
     }
 
-    public void noAccSignUp() {
+    public void noAccSignUp(View view) {
         //should send you to the register page.
     }
 
