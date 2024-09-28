@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void sendtoLogin(View view) {
-        Intent switchActIntent = new Intent(this, Login.class);
+        Intent switchActIntent = new Intent(MainActivity.this, Login.class);
         startActivity(switchActIntent);
     }
 }
