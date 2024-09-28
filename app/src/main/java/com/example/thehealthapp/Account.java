@@ -3,6 +3,8 @@ package com.example.thehealthapp;
 import java.util.ArrayList;
 import java.util.Date;
 
+import kotlinx.coroutines.scheduling.Task;
+
 public class Account {
     String fristName;
     String lastName;
@@ -25,6 +27,10 @@ public class Account {
         lastName = l;
         email = e;
         password = p;
+    }
+
+    public void gainStat(){
+
     }
 }
 
