@@ -30,21 +30,37 @@
             android:id="@+id/editTextTextPassword"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_margin="32dp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginBottom="64dp"
             android:ems="10"
             android:hint="Password"
             android:inputType="textPassword" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/loginButton"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:layout_margin="32dp"
+            android:layout_marginHorizontal="32dp"
             android:fontFamily="sans-serif-light"
             android:text="Login"
             android:textAlignment="textEnd"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             app:cornerRadius="10dp"
             app:icon="@android:drawable/ic_partial_secure" />
+
+        <Button
+            android:id="@+id/noAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#E91E63"
+            android:fontFamily="sans-serif-medium"
+            android:text="no account?"
+            android:textAlignment="textEnd"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="20dp"
+            app:icon="@android:drawable/stat_sys_warning" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
