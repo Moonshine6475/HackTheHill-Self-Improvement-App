@@ -1,6 +1,7 @@
 package com.example.thehealthapp;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
@@ -23,7 +24,7 @@ public class Activity_Login extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
+        Log.d("hi", "onCreate: hi");
         EditText emailEntry = (EditText) findViewById(R.id.editTextTextEmailAddress);
         EditText passEntry = (EditText) findViewById(R.id.editTextTextPassword);
 

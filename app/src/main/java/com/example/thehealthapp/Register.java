@@ -1,9 +1,11 @@
 package com.example.thehealthapp;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,16 +25,20 @@ public class Register extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        EditText emailEntry = (EditText) findViewById(R.id.editTextEmailAddress);
+        EditText passEntry = (EditText) findViewById(R.id.editTextPassword);
+        EditText passConfirm = (EditText) findViewById(R.id.editTextPasswordConf);
+
     }
 
-    final EditText emailEntry = (EditText) findViewById(R.id.editTextTextEmailAddress);
-    final EditText passEntry = (EditText) findViewById(R.id.editTextTextPassword);
-    final EditText passConfirm = (EditText) findViewById(R.id.editTextTextPasswordConf);
 
     public void registerPressed(View view) {
-        String e = String.valueOf(emailEntry.getText());
-        String p = String.valueOf(passEntry.getText());
-        String c = String.valueOf(passConfirm.getText());
+        EditText et = findViewById(R.id.editTextTextEmailAddress);
+        String e = String.valueOf(et.getText());
+        et = findViewById(R.id.editTextPassword);
+        String p = String.valueOf(et.getText());
+        et = findViewById(R.id.editTextPasswordConf);
+        String c = String.valueOf(et.getText());
         if(p.equals(c)) {
             MainActivity.user = new Account(e,p);
             Intent intent = new Intent(this, Login.class);

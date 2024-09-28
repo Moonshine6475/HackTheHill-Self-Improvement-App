@@ -2,6 +2,7 @@ package com.example.thehealthapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import androidx.activity.EdgeToEdge;
@@ -22,6 +23,7 @@ public class Login extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        Log.d("hI", "onCreate: hi");
     }
 
     final EditText emailEntry = (EditText) findViewById(R.id.editTextTextEmailAddress);

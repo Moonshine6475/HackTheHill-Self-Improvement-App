@@ -32,7 +32,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(switchActIntent);
     }
     public void sendtoRegister(View view) {
-        startActivity(new Intent(MainActivity.this, Register.class));
+        Intent switchActIntent = new Intent(MainActivity.this, Register.class);
+        startActivity(switchActIntent);
     }
 
 
