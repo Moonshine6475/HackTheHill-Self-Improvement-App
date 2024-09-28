@@ -6,8 +6,8 @@ import com.example.thehealthapp.tasks.Task;
 public class TaskList{
     ArrayList<Task> tasks = new ArrayList<Task>();
 
-    public void addTask(){
-        Task task = new Task();
+    public void addTask(Task task){
+        tasks.add(task);
     }
     public void deleteTask(Task task){
         tasks.remove(task);

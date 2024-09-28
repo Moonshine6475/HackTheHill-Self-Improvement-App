@@ -13,12 +13,16 @@ import static com.example.thehealthapp.Constant.category;
 public class Task {
     String taskName;
     String description;
-    String dif;
-    String cat;
 
     category type;
     Constant.diff difficulty;
 
+    public void setType(category type){
+        this.type = type;
+    }
+    public void setDifficulty(Constant.diff diff){
+        this.difficulty = diff;
+    }
     public category getType() {
         return type;
     }
@@ -26,10 +30,8 @@ public class Task {
         return difficulty;
     }
 
-    public Task(){
-        //popup
-//        type = cat;
-//        difficulty = dif;
+    public void setTaskName(String taskName){
+        this.taskName = taskName;
     }
 /**
     public void onSubmitClick(){
