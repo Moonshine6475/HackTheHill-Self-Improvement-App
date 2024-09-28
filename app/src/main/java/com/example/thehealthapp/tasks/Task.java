@@ -1,13 +1,21 @@
 package com.example.thehealthapp.tasks;
 
-abstract class task {
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
+
+public class Task {
     String taskName;
     String description;
+    String dif;
+    String cat;
     
-    enum catagory{
+    enum category{
         HEALTH,
         INT,
-        FIT
+        FIT,
+        WORK,
+        EVENT
     }
 
     enum diff{
@@ -16,7 +24,17 @@ abstract class task {
         EASY
     }
 
+    public Task(){
+        //popup
+    }
 
-
+    public void onSubmitClick(){
+        TextView e = new TextView();
+        taskName = e.getText().toString();
+        e = new TextView();
+        description = e.getText().toString();
+        //dropdown stuff
+        //close popup
+    }
     
 }
