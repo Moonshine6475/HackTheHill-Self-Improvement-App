@@ -31,7 +31,7 @@ public class Task {
 //        type = cat;
 //        difficulty = dif;
     }
-
+/**
     public void onSubmitClick(){
         TextView e = new TextView();
         taskName = e.getText().toString();
@@ -40,5 +40,5 @@ public class Task {
         //dropdown stuff
         //close popup
     }
-    
+    **/
 }

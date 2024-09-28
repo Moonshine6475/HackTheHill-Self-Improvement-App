@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:buttonTint="@color/black"
             android:id="@+id/checkbox"
-            android:text="This is a simple Text"
+            android:text="This is a simple task"
             android:textSize="18sp"
             android:paddingStart="4dp"/>
 
